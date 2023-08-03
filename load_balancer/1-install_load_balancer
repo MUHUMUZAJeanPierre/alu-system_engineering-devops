@@ -5,8 +5,8 @@ sudo apt install haproxy -y
 echo 'ENABLED=1' | sudo tee -a /etc/default/haproxy
 printf %s 'backend web-backend
         balance roundrobin
-        server 5430-web-01 54.160.134.25:80 check
-        server 5430-web-02 54.221.31.148:80 check
+        server 5742-web-01 54.234.30.140:80 check
+        server 5742-web-02 54.224.31.207:80 check
 frontend http
         bind *:80
         mode http
